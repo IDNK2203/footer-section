@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  text-align: center;
+}
+
+h1, h2 {
+  color: #232127;
+}
+
+p {
+  color: #9e9aa7;
+  padding: 1rem 0;
+  font-size: .9rem;
+}
+
+.hidden {
+  display: none;
+  opacity: 1;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.copy {
+  background-color: #3b3054;
+}
+
+.footer {
+  background: #232127;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    align-items: start;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+.footer .container .logo-holder {
+  margin: 1rem 0;
+  justify-self: start;
+}
+
+.footer .nav__list {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.footer .nav__item {
+  font-size: .85rem;
+  color: #9e9aa7;
+  padding: .25rem 0;
+}
+
+.footer .nav__item:hover:not(:first-child) {
+  color: #2acfcf;
+}
+
+.footer .nav__item--topic {
+  color: white;
+  padding: .25rem 0;
+}
+
+.footer .nav__list--socals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .5rem;
+  justify-content: center;
+}
+
+.footer .nav__list--socals .nav__item {
+  color: white;
+  font-size: 1.75rem;
+  padding: 0 .5rem;
+}
+
+.footer .nav__list--socals .nav__item:hover {
+  color: #2acfcf;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .nav--secondary {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+  }
+  .footer .nav__list {
+    text-align: left;
+  }
+  .footer .nav__list--socals {
+    padding: 0 0.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
